@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Collapse all gitlab diffs
-// @namespace    https://github.com/johanbrandhorst
+// @namespace    https://github.com/johanbrandhorst/collapse-gitlab-files
 // @version      0.1
-// @description  Collapses all files on the GitLab diff page
+// @description  Collapses all files on a GitLab merge request diff page
 // @author       Johan Brandhorst
 // @grant        none
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
