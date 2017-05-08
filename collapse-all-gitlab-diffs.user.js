@@ -8,8 +8,10 @@
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
 // @include      https://gitlab.com/*/diffs
 // @include      https://gitlab.com/*/diffs*
+// @include      https://gitlab.com/*/commit/*
 // @include      https://*.githost.io/*/diffs
 // @include      https://*.githost.io/*/diffs*
+// @include      https://*.githost.io/*/commit/*
 // ==/UserScript==
 //
 // Script based on script suggested by Pantelis Geo
