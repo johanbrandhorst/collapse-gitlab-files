@@ -6,11 +6,9 @@
 // @author       Johan Brandhorst
 // @grant        none
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
-// @include      https://gitlab.com/*/diffs
-// @include      https://gitlab.com/*/diffs*
+// @include      https://gitlab.com/*/merge_requests/*
 // @include      https://gitlab.com/*/commit/*
-// @include      https://*.githost.io/*/diffs
-// @include      https://*.githost.io/*/diffs*
+// @include      https://*.githost.io/*/merge_requests/*
 // @include      https://*.githost.io/*/commit/*
 // ==/UserScript==
 //
