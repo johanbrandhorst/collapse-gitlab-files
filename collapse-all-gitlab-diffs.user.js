@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Collapse all gitlab diffs
 // @namespace    https://github.com/johanbrandhorst/collapse-gitlab-files
-// @version      0.1
+// @version      0.2
 // @description  Collapses all files on a GitLab merge request diff page
 // @author       Johan Brandhorst
 // @grant        none
@@ -24,10 +24,9 @@
 waitForKeyElements (".inline-parallel-buttons", function() {
     'use strict';
 
-    var button = document.createElement ('button');
+    var button = document.createElement ('a');
     button.setAttribute ('id', 'collapse-button');
     button.setAttribute ('class', 'btn btn-default');
-    button.setAttribute ('type', 'button');
     button.textContent = "Collapse All";
     var buttons = document.getElementsByClassName ("inline-parallel-buttons")[0];
     buttons.insertBefore (button, buttons.firstChild);
@@ -38,11 +37,8 @@ waitForKeyElements (".inline-parallel-buttons", function() {
     );
 
     function CollapseAll (zEvent) {
-        $(".diff-file").find("div.nothing-here-block").each(function (i){
-            if (!$(this).is(":visible")){
-                $(this).parents("div.file-holder").find("div.file-title-flex-parent").trigger("click");
-            }
+        $(".diff-file").find("div.diff-content").each(function (i){
+            $(this).parents("div.file-holder").find("div.file-title-flex-parent").trigger("click");
         });
     }
 });
-
