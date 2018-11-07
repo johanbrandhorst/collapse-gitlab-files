@@ -37,8 +37,8 @@ waitForKeyElements (".inline-parallel-buttons", function() {
     );
 
     function CollapseAll (zEvent) {
-        $(".diff-file").find("div.diff-content").each(function (i){
-            $(this).parents("div.file-holder").find("div.file-title-flex-parent").trigger("click");
+        $(".diff-file:not(:has(div.nothing-here-block))").each(function (i){
+            $(this).find("div.file-title-flex-parent").trigger("click");
         });
     }
 });
